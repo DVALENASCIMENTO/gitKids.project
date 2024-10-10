@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Git Kids</title>
+</head>
+<body class="fundo">
+    <div class="container">
+        <!-- Logomarca CSS -->
+        <div class="logo-container">
+            <div class="logo-icon">
+                <div class="circle"></div>
+                <div class="branch branch1"></div>
+                <div class="branch branch2"></div>
+                <div class="branch branch3"></div>
+            </div>
+            <h1 class="logo-text">Git Kids</h1>
+        </div>
+
+            <h1 class="logo">Aprendendo Git com um Caderno Mágico</h1>
+            <br>
+        <section id="git-intro">
+            <h2>O que é Git?</h2>
+            <p>Git é como um caderno mágico onde você pode salvar todas as versões dos seus desenhos e trabalhos. Sempre que fizer uma mudança, você pode tirar uma foto e guardar!</p>
+            <img src="imagens/git_intro.webp" alt="Caderno Mágico" class="image">
+        </section>
+
+        <section id="git-commands" class="hidden">
+            <h2>Comandos Básicos de Git</h2>
+            <div class="command" onclick="showDescription('init')">
+                <h3>git init</h3>
+                <p>Cria um novo caderno mágico para guardar suas mudanças.</p>
+                <img src="imagens/git_init.webp" alt="Iniciando o Caderno" class="image">
+            </div>
+            <div class="command" onclick="showDescription('add')">
+                <h3>git add</h3>
+                <p>Escolhe quais desenhos você quer salvar na próxima foto mágica.</p>
+                <img src="imagens/git_add.webp" alt="Escolhendo o que salvar" class="image">
+            </div>
+            <div class="command" onclick="showDescription('commit')">
+                <h3>git commit</h3>
+                <p>Tira uma foto do seu trabalho até agora.</p>
+                <img src="imagens/git_commit.webp" alt="Tirando a Foto Mágica" class="image">
+            </div>
+            <div class="command" onclick="showDescription('log')">
+                <h3>git log</h3>
+                <p>Mostra todas as fotos que você já tirou.</p>
+                <img src="imagens/git_log.webp" alt="Vendo todas as fotos" class="image">
+            </div>
+            <div class="command" onclick="showDescription('checkout')">
+                <h3>git checkout</h3>
+                <p>Permite voltar no tempo para ver versões anteriores.</p>
+                <img src="imagens/git_checkout.webp" alt="Voltando no Tempo" class="image">
+            </div>
+            <div class="command" onclick="showDescription('branch')">
+                <h3>git branch e git merge</h3>
+                <p>Criar páginas separadas no caderno e misturar diferentes desenhos.</p>
+                <img src="imagens/git_branch_merge.webp" alt="Trabalhando em Vários Desenhos" class="image">
+            </div>
+        </section>
+
+        <section id="git-github" class="hidden">
+            <h2>Compartilhando com Amigos</h2>
+            <p>Você pode usar o GitHub para compartilhar seu caderno mágico com amigos, permitindo que eles vejam, comentem e façam mudanças!</p>
+            <img src="imagens/git_github.png" alt="Compartilhando no GitHub" class="image">
+        </section>
+
+        <div class="navigation">
+            <button id="prev-btn" onclick="navigate(-1)">Anterior</button>
+            <button id="next-btn" onclick="navigate(1)">Próximo</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
